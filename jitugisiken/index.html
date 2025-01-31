@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実技試験D117</title>
+    <style>
+        .contents{
+            display: grid;
+            background-color: bisque;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: space-around;
+            width: 1000px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .box{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .text{
+            width: 1000px;
+            background-color: red;
+            color: #fff;
+            margin: 0 auto;
+        }
+        .img-box{
+            text-align: center;
+
+        }
+        .b{
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;
+        }
+@media(max-width:767px){
+    .contents{
+        grid-template-columns: 1fr 1fr;
+        }
+}
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <div class="box" alt="テキスト1"></div>
+        <div class="box" alt="テキスト2"></div>
+        <div class="box" alt="テキスト3"></div>
+        <div class="box" alt="テキスト4"></div>
+        <p>テキスト1</p>
+        <p>テキスト2</p>
+        <p>テキスト3</p>
+        <p>テキスト4</p>
+    </div>
+    <div class="text">文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    </div>
+    <div class="img-box"><img src="img/kapi.webp" alt="カピバラ"></div>
+    <main>
+        <div>お名前:<input type="text" name="name"><br>
+        返信を希望する方はチェックしてください:<input type="checkbox" name="name"></input><br>
+        メッセージ:<br>
+        <input type="text" name="name" class="b"><br>
+        <input type="submit" value="送信する">
+        </div>
+    </main>
+</body>
+</html>
